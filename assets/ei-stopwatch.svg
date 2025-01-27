@@ -1,0 +1,19 @@
+<svg id="Outline" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+      :root {
+        --circle-color: black;
+      }
+    </style>
+  </defs>
+  <g style="fill: var(--circle-color);">
+    <rect class="cls-1" width="40" height="40"/>
+    <g>
+      <path d="M20,23a.99676.99676,0,0,1-.707-.293l-6-6A.99989.99989,0,0,1,14.707,15.293l6,6A1,1,0,0,1,20,23Z"/>
+      <path d="M21,8.05066V6h4a1,1,0,0,0,0-2H15a1,1,0,0,0,0,2h4V8.05066a14,14,0,1,0,2,0ZM20,34A12,12,0,1,1,32,22,12.01312,12.01312,0,0,1,20,34Z"/>
+    </g>
+  </g>
+</svg>

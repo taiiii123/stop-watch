@@ -1,0 +1,108 @@
+{
+  "name": "stop-watch",
+  "displayName": "Stop Watch",
+  "description": "Add a stopwatch tab to the action bar in the Explorer.",
+  "changelog": "CHANGELOG.md",
+  "version": "0.0.1",
+  "icon": "images/StopWatch.gif",
+  "publisher": "Y3191",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taiiii123/stop-watch.git"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": ["*"],
+  "keywords": [
+    "stopwatch",
+    "explorer",
+    "action bar",
+    "time",
+    "timer",
+    "time management",
+    "VSCode tools",
+    "developer tools",
+    "clock",
+    "webview",
+    "sidebar",
+    "custom views",
+    "VSCode extension"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "stopwatch.stopwatchView",
+          "name": "StopWatch"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Stop Watch Font",
+      "properties": {
+        "stopwatch.setStatusBarPosition": {
+          "type": "string",
+          "default": "Right",
+          "description": "Controls the position of the status bar item.",
+          "enum": [
+            "Left",
+            "Right"
+          ]
+        },
+        "stopwatch.switchFont": {
+          "type": "string",
+          "default": "Arial, sans-serif",
+          "description": "Controls the font of the stopwatch display.",
+          "enum": [
+            "Arial, sans-serif",
+            "DSEG-Regular",
+            "DSEG-Bold",
+            "Orbitron",
+            "RampartOne",
+            "瀞ノグリッチ",
+            "851Gkktt",
+            "rycsminStencily",
+            "Isego"
+          ],
+          "enumDescriptions": [
+            "Default font Arial, sans-serif",
+            "Standard font for 7-segment display",
+            "Standard font for bold 7-segment display",
+            "Geometric sans-serif typeface",
+            "A bold, 3-D block-inspired outline font for impact and strength",
+            "瀞ノグリッチ font",
+            "851Gkktt font",
+            "rycsminStencily font",
+            "Isego font"
+          ]
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^5.7.2"
+  }
+}
