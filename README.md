@@ -115,7 +115,7 @@ When setting `stopwatch.switchFont`, here is an example of usage.
 The Dark Mode / Light Mode feature allows you to switch to Dark Mode by pressing the 🌙 button, and to Light Mode by pressing the 🌞 button.<br>
 Here is an example of how to use it.
 
-<img src="https://github.com/user-attachments/assets/af20f113-0290-4892-9e3e-5b759e7c0ebb" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+<img src="https://github.com/user-attachments/assets/aa57bd5e-f109-44e5-a7d5-498ca141cbfd" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
 
 ## Change Log📝
 

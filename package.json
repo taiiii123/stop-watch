@@ -3,7 +3,7 @@
   "displayName": "StopWatch Timer",
   "description": "Add a stopwatch tab to the action bar in the Explorer.",
   "changelog": "CHANGELOG.md",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "images/StopWatch.gif",
   "publisher": "Y3191",
   "repository": {

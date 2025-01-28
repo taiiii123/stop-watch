@@ -115,7 +115,7 @@
 ダークモード / ライトモード機能では、🌙ボタンを押すとダークモードに、🌞ボタンを押すとライトモードに切り替えができます。<br>
 以下はその使用例です。
 
-<img src="https://github.com/user-attachments/assets/bae5538f-b23f-4243-961b-b86a2b5fd0d3" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+<img src="https://github.com/user-attachments/assets/aa57bd5e-f109-44e5-a7d5-498ca141cbfd" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
 
 ## 変更履歴📝
 
