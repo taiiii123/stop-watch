@@ -6,11 +6,11 @@
 
 
 <p align="center"><img src="https://github.com/user-attachments/assets/29cecc32-12da-489d-b89a-6a5c1cbc532d" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
-<p align="center"><img src="https://github.com/user-attachments/assets/f055e63e-f33e-4876-9230-f5ec04f966e3" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/66ec465d-0ad2-45ef-ab5d-49fb7b65cb5c" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
 
-# Stop Watch - VS Code拡張機能
+# Stop Watch(ストップウォッチ) - VS Code拡張機能
 
-**Stop Watch**は、エクスプローラーのアクションバーにストップウォッチタブを追加し、ステータスバーに経過時間を表示する拡張機能です。
+**Stop Watch(ストップウォッチ)**は、エクスプローラーのアクションバーにストップウォッチタブを追加し、ステータスバーに経過時間を表示する拡張機能です。
 
 ### 動作例
 
@@ -33,7 +33,7 @@
 
 ## 使い方💡
 
-1. エクスプローラーのアクションバーでストップウォッチタブを開きます。
+1. エクスプローラーのアクションバーで`STOPWATCH`タブを開きます。
 2. 表示されたストップウォッチを使って、`開始`、`停止`、または`リセット`を行い、時間を確認できます。（[動作例](#動作例)を参照）
 3. ステータスバーでも時間を確認できます。
 

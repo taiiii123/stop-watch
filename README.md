@@ -5,12 +5,12 @@
 </div>
 
 <p align="center"><img src="https://github.com/user-attachments/assets/29cecc32-12da-489d-b89a-6a5c1cbc532d" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
-<p align="center"><img src="https://github.com/user-attachments/assets/f055e63e-f33e-4876-9230-f5ec04f966e3" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/66ec465d-0ad2-45ef-ab5d-49fb7b65cb5c" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
 
 
-# Stop Watch - VS Code Extension
+# Stop Watch(ストップウォッチ) - VS Code Extension
 
-**Stop Watch** is an extension that adds a stopwatch tab to the Explorer action bar and displays the elapsed time in the status bar.
+**Stop Watch(ストップウォッチ)** is an extension that adds a stopwatch tab to the Explorer action bar and displays the elapsed time in the status bar.
 
 ### Demo
 
@@ -33,7 +33,7 @@ There are 2 ways to install this extension:
 
 ## Usage💡
 
-1. Open the action bar in the Explorer and navigate to the Stopwatch tab.
+1. Open the action bar in the Explorer and navigate to the `STOPWATCH` tab.
 2. Use the displayed stopwatch to `start`, `stop`, or `reset` the timer, and check the time. (Refer to:[Demo](#demo)).
 3. You can also check the time from the status bar.
 
