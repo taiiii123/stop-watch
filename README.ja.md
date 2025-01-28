@@ -6,11 +6,11 @@
 
 
 <p align="center"><img src="https://github.com/user-attachments/assets/29cecc32-12da-489d-b89a-6a5c1cbc532d" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
-<p align="center"><img src="https://github.com/user-attachments/assets/66ec465d-0ad2-45ef-ab5d-49fb7b65cb5c" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/103e50c0-d960-478d-9385-e8452236fea5" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
 
-# Stop Watch(ストップウォッチ) - VS Code拡張機能
+# StopWatch - VS Code拡張機能
 
-**Stop Watch(ストップウォッチ)**は、エクスプローラーのアクションバーにストップウォッチタブを追加し、ステータスバーに経過時間を表示する拡張機能です。
+**StopWatch**は、エクスプローラーのアクションバーにストップウォッチタブを追加し、ステータスバーに経過時間を表示する拡張機能です。
 
 ### 動作例
 
@@ -21,7 +21,7 @@
 この拡張機能のインストール方法は2通りです：
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?XXXX)からインストール
-- エディタの拡張機能タブで `Stop Watch` を検索
+- エディタの拡張機能タブで `StopWatch` を検索
 
 ## 機能🚀
 
