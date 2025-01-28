@@ -5,8 +5,8 @@
 </div>
 
 
-<p align="center"><img src="https://github.com/user-attachments/assets/29cecc32-12da-489d-b89a-6a5c1cbc532d" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
-<p align="center"><img src="https://github.com/user-attachments/assets/447d1d85-9b93-4a19-a3a3-96652c1e441a" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/528184e7-4717-42ac-97a2-d01e4ef350c0" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/d456ec37-bd76-40b7-81bd-35234142c9cb" height=120 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
 
 # StopWatch Timer - VS Code拡張機能
 
@@ -14,13 +14,13 @@
 
 ### 動作例
 
-<p align="center"><img src="https://github.com/user-attachments/assets/4f1a82ca-bf5f-4831-9e3b-b443cb3e37cc" style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/be91f613-d954-4e39-85a2-643a5c110ae7" style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/></p>
 
 ## インストール💻
 
 この拡張機能のインストール方法は2通りです：
 
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?XXXX)からインストール
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Y3191.stop-watch)からインストール
 - エディタの拡張機能タブで `StopWatch Timer` を検索
 
 ## 機能🚀
@@ -37,7 +37,7 @@
 2. 表示されたストップウォッチを使って、`開始`、`停止`、または`リセット`を行い、時間を確認できます。（[動作例](#動作例)を参照）
 3. ステータスバーでも時間を確認できます。
 
-<img src="https://github.com/user-attachments/assets/ac896af3-3886-4162-b9ff-ed0f48b4cb8f" style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/>
+<img src="https://github.com/user-attachments/assets/2bb66f17-2a52-406f-8776-bd458aa4b725" style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/>
 
 ## 設定⚙️
 
@@ -64,47 +64,47 @@
   <tr>
     <td>
         <p>Arial, sans-serif (デフォルト)</p>
-        <img src="https://github.com/user-attachments/assets/4185f3a3-4b4a-43c9-967b-5d5de4d337cb" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/6b08c978-4ac9-41e0-883b-ff53ada0c5b0" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
     <td>
         <p>DSEG-Regular</p>
-        <img src="https://github.com/user-attachments/assets/cfa79e7e-0a3c-464b-958b-23ee505996ad" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/0e134cc9-0a74-4621-9acc-894065f2a159" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
   </tr>
   <tr>
     <td>
         <p>DSEG-Bold</p>
-        <img src="https://github.com/user-attachments/assets/77230600-896f-4b6a-8b25-b3c7373b0706" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/d21380eb-7cd2-4d39-b4c4-59e8dbbdb9d3" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
     <td>
         <p>Orbitron</p>
-        <img src="https://github.com/user-attachments/assets/a280f10d-e216-4977-986f-da4ea5936407" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/be35011d-f09a-4d67-8f6d-b7816af23751" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
   </tr>
   <tr>
     <td>
         <p>RampartOne</p>
-        <img src="https://github.com/user-attachments/assets/9ba6f861-063a-4c30-8dc7-ab28b058472b" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/3529e6c2-9f36-4bed-a6a0-c644df3b2017" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
     <td>
         <p>瀞ノグリッチ</p>
-        <img src="https://github.com/user-attachments/assets/c0dd8658-8abd-4a6f-aaef-a6dad2bccdf4" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/ed432f9d-1eae-4873-affd-b7016af82a75" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
   </tr>
   <tr>
     <td>
         <p>851Gkktt</p>
-        <img src="https://github.com/user-attachments/assets/925dc501-e51e-4b8e-8384-d55161346216" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/52401d66-399e-41b3-92f3-acc9a138d9bf" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
     <td>
         <p>rycsminStencily</p>
-        <img src="https://github.com/user-attachments/assets/4e341277-30ec-4879-8bc9-b93fcd9d0031" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/88bffdc5-6d1e-4227-b1b6-e564c3120222" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
   </tr>
   <tr>
     <td>
         <p>Isego</p>
-        <img src="https://github.com/user-attachments/assets/fa1193cc-903f-41f7-9aeb-8b4e8c6af454" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+        <img src="https://github.com/user-attachments/assets/f2d5074e-a25d-4036-bea6-c740a1925fcf" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
     </td>
     <td>
     </td>
@@ -115,7 +115,7 @@
 ダークモード / ライトモード機能では、🌙ボタンを押すとダークモードに、🌞ボタンを押すとライトモードに切り替えができます。<br>
 以下はその使用例です。
 
-<img src="https://github.com/user-attachments/assets/af20f113-0290-4892-9e3e-5b759e7c0ebb" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+<img src="https://github.com/user-attachments/assets/bae5538f-b23f-4243-961b-b86a2b5fd0d3" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
 
 ## 変更履歴📝
 

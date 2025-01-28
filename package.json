@@ -1,16 +1,16 @@
 {
   "name": "stop-watch",
-  "displayName": "Stop Watch",
+  "displayName": "StopWatch Timer",
   "description": "Add a stopwatch tab to the action bar in the Explorer.",
   "changelog": "CHANGELOG.md",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "images/StopWatch.gif",
   "publisher": "Y3191",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/taiiii123/stop-watch.git"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -19,6 +19,7 @@
   ],
   "activationEvents": ["*"],
   "keywords": [
+    "stop watch",
     "stopwatch",
     "explorer",
     "action bar",
@@ -31,7 +32,11 @@
     "webview",
     "sidebar",
     "custom views",
-    "VSCode extension"
+    "VSCode extension",
+    "時間",
+    "時計",
+    "タイマー",
+    "ストップウォッチ"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -103,6 +108,6 @@
     "eslint": "^9.16.0",
     "typescript": "^5.7.2",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^5.7.2"
+    "@vscode/test-electron": "^2.2.3"
   }
 }
