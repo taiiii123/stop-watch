@@ -1,7 +1,7 @@
 // Description: Constants used in the application.
 
 /** Defines the priority for displaying elements in the status bar (higher value means higher priority). */
-export const STATUS_BAR_PRIORITY = 100;
+export const STATUS_BAR_PRIORITY = 80;
 
 /** Default time format used in the stopwatch display. */
 export const DEFAULT_TIME = '00:00:00';
@@ -17,7 +17,7 @@ export enum StopwatchState {
 }
 
 /** Enum representing global keys used for application-wide settings or state management. */
-export enum GlobalKeys { 
+export enum GlobalKeys {
     ELAPSED_TIME = 'stopwatch.elapsedTime',
     STATE = 'stopwatch.state',
     TIME = 'stopwatch.time',

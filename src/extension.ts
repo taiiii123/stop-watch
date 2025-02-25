@@ -27,16 +27,57 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     // Create and display the status bar
-    const statusBar = vscode.window.createStatusBarItem(alignment, constants.STATUS_BAR_PRIORITY);
+    const timeStatusBar = vscode.window.createStatusBarItem(alignment, constants.STATUS_BAR_PRIORITY);
+    const startStopStatusBar = vscode.window.createStatusBarItem(alignment, constants.STATUS_BAR_PRIORITY - 1);
+    const resetStatusBar = vscode.window.createStatusBarItem(alignment, constants.STATUS_BAR_PRIORITY - 2);
+
+    // Status Bar Settings for Time Display
     const time = context.globalState.get<string>(constants.GlobalKeys.TIME, constants.DEFAULT_TIME);
-    statusBar.text = `$(watch) ${time}`;
-    statusBar.tooltip = "Stop Watch";
-    statusBar.show();
+    timeStatusBar.text = `$(watch) ${time}`;
+    timeStatusBar.tooltip = "Stop Watch";
+    timeStatusBar.show();
 
-    context.subscriptions.push(statusBar);
+    // Start/Stop Button Settings
+    const updateStartStopButton = () => {
+        if (stopwatchManager.getState() === constants.StopwatchState.START) {
+            startStopStatusBar.text = "$(debug-pause)";
+            startStopStatusBar.tooltip = "Stop Stopwatch";
+        } else {
+            startStopStatusBar.text = "$(play)";
+            startStopStatusBar.tooltip = "Start Stopwatch";
+        }
+    };
+    updateStartStopButton();
+    startStopStatusBar.command = 'stopwatch.startStop';
+    startStopStatusBar.show();
 
-    // Update the status bar when the stopwatch time changes
+    // Reset Button Setting
+    resetStatusBar.text = "$(debug-restart)";
+    resetStatusBar.tooltip = "Reset Stopwatch";
+    resetStatusBar.command = 'stopwatch.reset';
+    resetStatusBar.show();
+
+    // Command Registration
+    context.subscriptions.push(
+        vscode.commands.registerCommand('stopwatch.startStop', () => {
+            if (stopwatchManager.getState() === constants.StopwatchState.START) {
+                stopwatchManager.stop();
+            } else {
+                stopwatchManager.start();
+            }
+            updateStartStopButton();
+        }),
+        vscode.commands.registerCommand('stopwatch.reset', () => {
+            stopwatchManager.reset();
+            updateStartStopButton();
+        })
+    );
+
+    // Status Bar Item Registration
+    context.subscriptions.push(timeStatusBar, startStopStatusBar, resetStatusBar);
+
+    // Status Bar Update on Time Refresh
     stopwatchManager.onUpdate((time) => {
-        statusBar.text = `$(watch) ${time}`;
+        timeStatusBar.text = `$(watch) ${time}`;
     });
 }
