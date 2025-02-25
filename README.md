@@ -25,7 +25,10 @@ There are 2 ways to install this extension:
 
 ## Features🚀
 
-- **Status Bar Integration**: Shows the elapsed time in the status bar.
+- **Status Bar Integration**:
+  - Shows the elapsed time in the status bar.
+  - Integrated start/stop toggle button and reset button.
+  - Reload confirmation dialog when changing settings.
 - **Webview Interface**: An interactive webview interface for controlling the stopwatch.
 - **Start, Stop, Reset**: Simple controls to start, stop, and reset the stopwatch.
 - **Customizable Display**: Switch between dark and light mode with a theme toggle button.
@@ -34,8 +37,12 @@ There are 2 ways to install this extension:
 ## Usage💡
 
 1. Open the action bar in the Explorer and navigate to the `STOPWATCH` tab.
-2. Use the displayed stopwatch to `start`, `stop`, or `reset` the timer, and check the time. (Refer to:[Demo](#demo)).
-3. You can also check the time from the status bar.
+2. Use the displayed stopwatch to `start`, `stop`, or `reset` the timer, and check the time. (Refer to:[Demo](#demo))
+3. You can also check the time from the status bar:
+   - ⏱️ icon shows the current time
+   - ▶️/⏸️ button toggles start/stop
+   - 🔄 button resets the timer
+4. When changing font or position settings, you'll be prompted to reload for changes to take effect.
 
 <img src="https://github.com/user-attachments/assets/2bb66f17-2a52-406f-8776-bd458aa4b725" style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"/>
 
@@ -116,6 +123,18 @@ The Dark Mode / Light Mode feature allows you to switch to Dark Mode by pressing
 Here is an example of how to use it.
 
 <img src="https://github.com/user-attachments/assets/aa57bd5e-f109-44e5-a7d5-498ca141cbfd" height=250 style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));"></img>
+
+## New Features
+
+# Release 0.0.4
+
+- Integrated start/stop and reset buttons in the status bar
+
+<img src="https://github.com/user-attachments/assets/334ebeef-4dd7-4095-a13f-1b378a0b4e37" height=30></img>
+
+- Added reload confirmation dialog when changing settings
+
+<img src="https://github.com/user-attachments/assets/136fd707-d1c3-4472-9e8d-71ab791b3684" height=80></img>
 
 ## Change Log📝
 
