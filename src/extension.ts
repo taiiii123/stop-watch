@@ -4,17 +4,6 @@ import { StopwatchManager } from './manager/stopwatchManager';
 import { StopwatchViewProvider } from './provider/stopwatchViewProvider';
 
 export function activate(context: vscode.ExtensionContext) {
-
-    const stopwatchManager = new StopwatchManager(context);
-    const provider = new StopwatchViewProvider(context, context.extensionUri, stopwatchManager);
-
-    stopwatchManager.setViewProvider(provider);
-
-    // Register WebviewViewProvider for the stopwatch view
-    context.subscriptions.push(
-        vscode.window.registerWebviewViewProvider(StopwatchViewProvider.viewType, provider)
-    );
-
     // Set the position of the status bar based on user settings
     const configuration = vscode.workspace.getConfiguration('stopwatch');
     const position = configuration.get<string>('setStatusBarPosition') || constants.StatusBarDisplayPosition.RIGHT;
@@ -30,6 +19,21 @@ export function activate(context: vscode.ExtensionContext) {
     const timeStatusBar = vscode.window.createStatusBarItem(alignment, constants.STATUS_BAR_PRIORITY);
     const startStopStatusBar = vscode.window.createStatusBarItem(alignment, constants.STATUS_BAR_PRIORITY - 1);
     const resetStatusBar = vscode.window.createStatusBarItem(alignment, constants.STATUS_BAR_PRIORITY - 2);
+
+    const stopwatchManager = new StopwatchManager(context);
+    const provider = new StopwatchViewProvider(
+        context,
+        context.extensionUri,
+        stopwatchManager,
+        startStopStatusBar
+    );
+
+    stopwatchManager.setViewProvider(provider);
+
+    // Register WebviewViewProvider for the stopwatch view
+    context.subscriptions.push(
+        vscode.window.registerWebviewViewProvider(StopwatchViewProvider.viewType, provider)
+    );
 
     // Status Bar Settings for Time Display
     const time = context.globalState.get<string>(constants.GlobalKeys.TIME, constants.DEFAULT_TIME);

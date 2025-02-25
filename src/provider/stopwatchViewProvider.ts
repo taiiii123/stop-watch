@@ -1,4 +1,3 @@
-
 import * as vscode from 'vscode';
 import * as constants from '../utils/constants';
 import { StopwatchManager } from '../manager/stopwatchManager';
@@ -6,8 +5,16 @@ import { StopwatchManager } from '../manager/stopwatchManager';
 export class StopwatchViewProvider implements vscode.WebviewViewProvider {
     public static readonly viewType = 'stopwatch.stopwatchView';
     private _view?: vscode.WebviewView;
+    private _startStopStatusBar: vscode.StatusBarItem;
 
-    constructor(private readonly context: vscode.ExtensionContext, private readonly _extensionUri: vscode.Uri, private readonly stopwatchManager: StopwatchManager) {}
+    constructor(
+        private readonly context: vscode.ExtensionContext,
+        private readonly _extensionUri: vscode.Uri,
+        private readonly stopwatchManager: StopwatchManager,
+        startStopStatusBar: vscode.StatusBarItem
+    ) {
+        this._startStopStatusBar = startStopStatusBar;
+    }
 
     public resolveWebviewView(
         webviewView: vscode.WebviewView,
@@ -21,7 +28,7 @@ export class StopwatchViewProvider implements vscode.WebviewViewProvider {
             enableScripts: true,
             localResourceRoots: [this._extensionUri],
         };
-        
+
         // Set the HTML content for the webview
         if (this._view) {
             webviewView.webview.html = this._getHtmlForWebview(webviewView.webview);
@@ -33,7 +40,7 @@ export class StopwatchViewProvider implements vscode.WebviewViewProvider {
                 if(watchState === constants.StopwatchState.RESET) {
                     time = constants.DEFAULT_TIME;
                 }
-                
+
                 this._view.webview.postMessage({
                     command: 'updateTime',
                     time: time,
@@ -48,14 +55,20 @@ export class StopwatchViewProvider implements vscode.WebviewViewProvider {
                 case constants.StopwatchState.START:
                     watchState = constants.StopwatchState.START;
                     this.stopwatchManager.start();
+                    this._startStopStatusBar.text = "$(debug-pause)";
+                    this._startStopStatusBar.tooltip = "Stop Stopwatch";
                     break;
                 case constants.StopwatchState.STOP:
                     watchState = constants.StopwatchState.STOP;
                     this.stopwatchManager.stop();
+                    this._startStopStatusBar.text = "$(play)";
+                    this._startStopStatusBar.tooltip = "Start Stopwatch";
                     break;
                 case constants.StopwatchState.RESET:
                     watchState = constants.StopwatchState.RESET;
                     this.stopwatchManager.reset();
+                    this._startStopStatusBar.text = "$(play)";
+                    this._startStopStatusBar.tooltip = "Start Stopwatch";
                     break;
             }
         });
@@ -85,7 +98,7 @@ export class StopwatchViewProvider implements vscode.WebviewViewProvider {
     // Generate HTML content for the webview
 	private _getHtmlForWebview(webview: vscode.Webview) {
 		const cspSource = webview.cspSource;
-        
+
         const svgPath = vscode.Uri.joinPath(this._extensionUri, 'assets', 'ei-stopwatch.svg');
         const svgSrc = webview.asWebviewUri(svgPath);
 
@@ -96,7 +109,7 @@ export class StopwatchViewProvider implements vscode.WebviewViewProvider {
         if (font === '851Gkktt') {
             font = '_851Gkktt';
         }
-        
+
         // FUTURE: Custom Font
         // let customFontPath = configuration.get<string>('customFontPath');
         // if (font === 'CustomFont' && !(customFontPath && fs.existsSync(customFontPath))) {

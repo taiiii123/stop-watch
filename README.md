@@ -126,7 +126,7 @@ Here is an example of how to use it.
 
 ## New Features
 
-# Release 0.0.4
+# Release 0.0.5
 
 - Integrated start/stop and reset buttons in the status bar
 
