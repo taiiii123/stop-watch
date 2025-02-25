@@ -59,7 +59,8 @@
           "enum": [
             "Left",
             "Right"
-          ]
+          ],
+          "scope": "window"
         },
         "stopwatch.switchFont": {
           "type": "string",
@@ -86,7 +87,8 @@
             "851Gkktt font",
             "rycsminStencily font",
             "Isego font"
-          ]
+          ],
+          "scope": "window"
         }
       }
     }

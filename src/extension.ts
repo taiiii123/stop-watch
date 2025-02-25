@@ -80,4 +80,23 @@ export function activate(context: vscode.ExtensionContext) {
     stopwatchManager.onUpdate((time) => {
         timeStatusBar.text = `$(watch) ${time}`;
     });
+
+    // 設定変更の監視
+    context.subscriptions.push(
+        vscode.workspace.onDidChangeConfiguration(async (e) => {
+            if (e.affectsConfiguration('stopwatch.switchFont') ||
+                e.affectsConfiguration('stopwatch.setStatusBarPosition')) {
+
+                const answer = await vscode.window.showInformationMessage(
+                    'StopWatch: Reload window to apply changes?',
+                    'Yes',
+                    'No'
+                );
+
+                if (answer === 'Yes') {
+                    vscode.commands.executeCommand('workbench.action.reloadWindow');
+                }
+            }
+        })
+    );
 }
