@@ -126,7 +126,7 @@ Here is an example of how to use it.
 
 ## New Features
 
-# Release 0.0.5
+# Release 0.0.6
 
 - Integrated start/stop and reset buttons in the status bar
 
@@ -134,7 +134,7 @@ Here is an example of how to use it.
 
 - Added reload confirmation dialog when changing settings
 
-<img src="https://github.com/user-attachments/assets/136fd707-d1c3-4472-9e8d-71ab791b3684" height=80></img>
+<img src="https://github.com/user-attachments/assets/7b8d58d6-ceaa-4437-9c74-7f9ca61790af" height=80></img>
 
 ## Change Log📝
 

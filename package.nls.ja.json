@@ -1,0 +1,5 @@
+{
+    "extension.stopWatch.tab.name": "ストップウォッチ",
+    "extension.stopWatch.setStatusBarPosition.description": "ステータスバーアイテムの位置を制御します。",
+    "extension.stopWatch.switchFont.description": "ストップウォッチのフォントを変更します。"
+}

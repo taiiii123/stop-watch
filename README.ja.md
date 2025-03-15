@@ -126,7 +126,7 @@
 
 ## 追加機能
 
-# リリース0.0.5
+# リリース0.0.6
 
 - ステータスバーにスタート/ストップボタン、リセットボタンを統合
 
@@ -134,7 +134,7 @@
 
 - 設定変更時のリロード確認ダイアログを表示
 
-<img src="https://github.com/user-attachments/assets/136fd707-d1c3-4472-9e8d-71ab791b3684" height=80></img>
+<img src="https://github.com/user-attachments/assets/1059731b-39a8-4fd1-ac43-44494b506fd8" height=80></img>
 
 
 ## 変更履歴📝

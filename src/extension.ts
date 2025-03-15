@@ -1,4 +1,4 @@
-import * as vscode from 'vscode';
+import vscode, { l10n } from 'vscode';
 import * as constants from './utils/constants';
 import { StopwatchManager } from './manager/stopwatchManager';
 import { StopwatchViewProvider } from './provider/stopwatchViewProvider';
@@ -92,12 +92,12 @@ export function activate(context: vscode.ExtensionContext) {
                 e.affectsConfiguration('stopwatch.setStatusBarPosition')) {
 
                 const answer = await vscode.window.showInformationMessage(
-                    'StopWatch: Reload window to apply changes?',
-                    'Yes',
-                    'No'
+					l10n.t("StopWatch Timer: Settings have been changed. A window reload is required to apply the changes. Do you want to reload now?"),
+					l10n.t("Yes"),
+					l10n.t("No")
                 );
 
-                if (answer === 'Yes') {
+                if (answer === l10n.t("Yes")) {
                     vscode.commands.executeCommand('workbench.action.reloadWindow');
                 }
             }

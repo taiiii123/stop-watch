@@ -1,0 +1,5 @@
+{
+    "extension.stopWatch.tab.name": "StopWatch",
+    "extension.stopWatch.setStatusBarPosition.description": "Controls the position of the status bar item.",
+    "extension.stopWatch.switchFont.description": "Changes the font of the stopwatch."
+}

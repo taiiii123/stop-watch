@@ -8,3 +8,7 @@
 ### Changed
 - 🔄 Merged start/stop buttons in status bar into a single toggle button
 - ⚙️ Added reload confirmation dialog when changing font or status bar position settings
+
+## [0.0.6] - 2025-03-15
+### Changed
+- 🌐 Added localization for settings and reload confirmation messages
