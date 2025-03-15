@@ -1,6 +1,6 @@
 <div align="right" style="font-size: 20px;">
 
-[English](./README.md) | **日本語**
+[English](https://github.com/taiiii123/stop-watch/tree/v0.0.6) | **日本語**
 
 </div>
 

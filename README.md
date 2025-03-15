@@ -1,6 +1,6 @@
 <div align="right" style="font-size: 20px;">
 
-**English** | [日本語](./README.ja.md)
+**English** | [日本語](https://github.com/taiiii123/stop-watch/blob/v0.0.6/README.ja.md)
 
 </div>
 
